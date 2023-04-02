@@ -177,3 +177,37 @@ div{
     width: 60%;
     margin: 0 auto;
 }
+
+.post_image{
+    max-width: 100%;
+}
+
+.post_image img{
+    border-radius: 4px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.post_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.post_footer img{
+    filter: invert(1);
+    width: 20px;
+    cursor: pointer;
+}
+
+.action_items{
+    display: flex;
+    align-items: center;
+    gap : 15px;
+}
+
+/* .action_items div{
+    margin-right: 15px;
+} */
