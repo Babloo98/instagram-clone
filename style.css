@@ -1,0 +1,179 @@
+body{
+    background-color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+div{
+    color: #ffffff;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.navigation_container{
+    border-right: 1px solid #262626;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.w-15{
+    width: 15%;
+}
+
+
+.w-60{
+    width: 60%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.logo_text_wrapper{
+    max-width: 200px;
+    filter: invert(1);
+}
+
+.logo_text_wrapper img{
+    width: 100%;
+}
+
+.navigation_items{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.navigation_items li a, .navigation_footer{
+    display: flex;
+    align-items: center;
+}
+
+.navigation_items li{
+   cursor: pointer; 
+}
+
+.navigation_footer:hover{
+    background-color: #121212;
+    border-radius: 30px;
+}
+
+.navigation_items li:hover{
+    background-color: #121212;
+    border-radius: 30px;
+}
+
+.navigtaion_items_icon{
+    width: 24px;
+    padding: 10px;
+}
+
+.navigtaion_items_icon img, .post_profile_section_wrapper .dots{
+    width: 100%;
+    filter: invert(1);
+}
+
+.navigation_items p{
+    font-weight: 500;
+}
+
+.alert_count{
+    background-color: #ff2f40;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px;
+    position: absolute;
+    top: 5px;
+    right: 2px;
+}
+
+.navigtaion_items_icon{
+    position: relative;
+
+}
+
+
+
+.stories_header{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.posts_container{
+    padding: 40px 20px 0px 100px;
+}
+
+.story_image_container{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid transparent; /*2*/
+    position: relative;
+    margin-right: 15px;
+}
+
+  .story_image_container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px; 
+    padding: 3px; 
+    background:linear-gradient(45deg,red,blue); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+  }
+  
+
+.story_image_container img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.post_profile_section{
+    display: flex;
+    align-items: center;
+}
+
+.post_profile_section .story_image_container{
+    width: 30px;
+    height: 30px;
+}
+
+.profile_name{
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 12px;
+}
+
+.post_time{
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 12px;
+    color: #a8a8a8;
+}
+
+.post_profile_section_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dots_wrapper{
+    width: 20px;
+    cursor: pointer;
+}
+
+.single_post{
+    width: 60%;
+    margin: 0 auto;
+}
