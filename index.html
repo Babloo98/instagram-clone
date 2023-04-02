@@ -6,8 +6,9 @@
         <link rel="stylesheet" href="./style.css"/>
         <meta author = "Babloo Mishra" description = "Instagram clone"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Montserrat:wght@100;300;500;700;900&family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@300;500;400;700&family=Tilt+Prism&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Montserrat:wght@100;300;500;700;900&family=Open+Sans:wght@300;400;700&family=Roboto+Condensed:wght@300;500;400;700&family=Tilt+Prism&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="main">
@@ -31,6 +32,9 @@
                 </div>
             </div>
             <div class="posts_container w-60">
+                <div class="mobile_view_search">
+                    <input class="input_tag" name="search" value = "" placeholder="Search"></input>
+                </div>
                 <div class="stories_header">
                     <div class="story_image_container">
                         <img class="story_profile" src = "./assets/profile.jpeg"/>
@@ -148,7 +152,48 @@
 
             </div>
             <div class="profile_container w-25">
-                Profile contianer
+                <div class="profile_header_section">
+                    <div class="d-flex">
+                        <img class="story_profile" src = "./assets/profile.jpeg"/>
+                        <div class="profile_description">
+                            <p class="profile_name mb_8">babloo_mishra98</p>
+                            <p class="post_time m_0">Babloo Mishra</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="blue_label">Switch</p>
+                    </div>
+                </div>
+                <div class="suggestion_section">
+                    <div class="suggestion_header">
+                        <p class="post_time m_0">Suggestion for you</p>
+                        <p class="profile_name mb_8">See All</p>
+                    </div>
+                    <div class="profile_header_section">
+                        <div class="d-flex">
+                            <img class="story_profile" src = "./assets/profile.jpeg"/>
+                            <div class="profile_description">
+                                <p class="profile_name mb_8">sumit_kumar98</p>
+                                <p class="post_time m_0">Followed by sumit.kumar98</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="blue_label">Follow</p>
+                        </div>
+                    </div>
+                    <div class="profile_header_section">
+                        <div class="d-flex">
+                            <img class="story_profile" src = "./assets/profile.jpeg"/>
+                            <div class="profile_description">
+                                <p class="profile_name mb_8">ankit_sinha89</p>
+                                <p class="post_time m_0">Followed by babloo.mishra98</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="blue_label">Follow</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
